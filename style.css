@@ -158,6 +158,11 @@ p {
     background-color: var(--Grey50);
     color: #547878
 }
+.tip-options-container button.active {
+    background-color: #9FE8DF; 
+    color: var(--White);
+}
+
 .people-container {
     gap: .8rem;
     margin-bottom: 3.2rem;
@@ -268,9 +273,7 @@ p {
     }
     .tip-options-container button:hover {
         background-color: #9FE8DF;
+        transform: scale(1.1);
     }
-    .tip-options-container button.active {
-    background-color: #9FE8DF; 
-    color: var(--White);
-}
+    
 }
