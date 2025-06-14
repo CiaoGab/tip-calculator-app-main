@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <img class="logo" src="./images/logo.svg" alt="logo" />
+    <div class="main-container">
+      <div class="content-container">
+        <div class="bill-container">
+          <div class="bill-header">
+            <label for="Bill">Bill</label>
+            <input
+              type="number"
+              name="Bill"
+              placeholder="0"
+              class="input-field"
+              id="bill-input"
+            />
+          </div>
+          <div class="tip-selection-container">
+            <label for="">Select Tip %</label>
+            <div class="tip-options-container">
+              <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <input
+              type="number"
+              name="Custom"
+              id=""
+              placeholder="Custom"
+              class="custom"
+              id="custom-input"
+            />
+            </div>
+            
+          </div>
+          <div class="people-container">
+            <label for="">Number of People</label>
+            <input
+              type="number"
+              placeholder="0"
+              class="input-field"
+              id="people-Input"
+            />
+          </div>
+        </div>
+        <div class="results-container">
+          <div class="results-content">
+            <div class="results-details">
+              <div class="tip-amount-row">
+                <div class="tip-amount-label">
+                  <h2>Tip Amount</h2>
+                  <p>/ person</p>
+                </div>
+                <h3 class="resultAmount" id="tip-amount">$0.00</h3>
+              </div>
+              <div class="total-amount-row">
+                <div class="total-amount-label">
+                  <h2>Total</h2>
+                  <p>/ person</p>
+                </div>
+                <h3 class="resultAmount" id="total">$0.00</h3>
+              </div>
+            </div>
+            <button class="reset-button">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
