@@ -39,24 +39,26 @@
           <div class="tip-selection-container">
             <label for="">Select Tip %</label>
             <div class="tip-options-container">
-              <button>5%</button>
-            <button>10%</button>
-            <button>15%</button>
-            <button>25%</button>
-            <button>50%</button>
-            <input
-              type="number"
-              name="Custom"
-              id=""
-              placeholder="Custom"
-              class="custom"
-              id="custom-input"
-            />
+              <button class="tipButton" id="5">5%</button>
+              <button class="tipButton" id="10">10%</button>
+              <button class="tipButton" id="15">15%</button>
+              <button class="tipButton" id="25">25%</button>
+              <button class="tipButton" id="50">50%</button>
+              <input
+                type="number"
+                name="Custom"
+                placeholder="Custom"
+                class="custom"
+                id="custom-input"
+              />
             </div>
-            
           </div>
           <div class="people-container">
-            <label for="">Number of People</label>
+            <div class="labels">
+              <label for="">Number of People</label>
+            <label id="error" for="">Can't be zero</label>
+            </div>
+            
             <input
               type="number"
               placeholder="0"
@@ -83,7 +85,7 @@
                 <h3 class="resultAmount" id="total">$0.00</h3>
               </div>
             </div>
-            <button class="reset-button">Reset</button>
+            <button class="reset-button" id="reset-button">Reset</button>
           </div>
         </div>
       </div>

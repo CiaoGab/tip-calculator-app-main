@@ -102,10 +102,10 @@ p {
     margin-bottom: 3.2rem;
 }
 .input-field {
-    padding: 1.6rem .8rem;
+    padding: 1.6rem 2.4rem 1.6rem .8rem;
     background-color: var(--Grey50);
     border-radius: .5rem;
-    text-align: end;
+    text-align: right;
     font-size: var(--fspreset3);
     color: var(--Green900);
     border: none;
@@ -113,7 +113,6 @@ p {
 }
 .input-field::placeholder {
     opacity: 35%;
-    margin-right: 1.6rem;
 }
 #bill-input{
     background-image: url(./images/icon-dollar.svg);
@@ -146,7 +145,6 @@ p {
     cursor: pointer;
     border: none;
 }
-
 .tip-options-container input {
     font-size: var(--fspreset3);
     line-height: var(--lhpreset3);
@@ -207,6 +205,14 @@ p {
     letter-spacing: var(--lspreset4);
     line-height:  var(--lhpreset4);
 }
+.labels {
+    display: flex;
+    justify-content: space-between;
+}
+#error {
+    color: #E17052;
+    display: none;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -263,4 +269,8 @@ p {
     .tip-options-container button:hover {
         background-color: #9FE8DF;
     }
+    .tip-options-container button.active {
+    background-color: #9FE8DF; 
+    color: var(--White);
+}
 }
